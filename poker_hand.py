@@ -55,7 +55,7 @@ def main():
     full_house =0
     iterations = 300_000
     
-     for hand in Generate_Hands(iterations):
+    for hand in Generate_Hands(iterations):
         four, full = check (hand)
         four_kind += four
         full_house += full
