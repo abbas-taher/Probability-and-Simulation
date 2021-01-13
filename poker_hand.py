@@ -10,14 +10,16 @@
      If we are drawing a random sample of 5 cards from the deck (One Pocker hand)
      
      - What is the chance that 4 of the cards are of one kind?
-     
      - What is the chance that we have 3 of one kind and 2 of another (Full House)?
      
      https://en.wikipedia.org/wiki/Poker_probability
       
+     In a 52 card game, we have 2,598,960 possible hands. Out of these possibilities there are 
+     624 four of a kind hands and 3744 full house hands. Thus, the true probabilities look like this:
+      
       Hand	           Possible Hands              Probability
-     Four of a Kind	  	    624                624 /2,598,960    = 0.000240096
-     Full House	      	    3744               3744/2,598,960  = 0.00144058
+     Four of a Kind	        624                624 /2,598,960  = 0.000240096
+     Full House             3744               3744/2,598,960  = 0.00144058
 """
 
 from random import sample
