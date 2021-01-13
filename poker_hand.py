@@ -23,6 +23,7 @@
 """
 
 from random import sample
+from collections import defaultdict 
 
 NAMES = ['Spade','Club', 'Heart', 'Diamond']
 names = ['S','C','H','D']
@@ -49,12 +50,14 @@ def check(hand):
     
 def main():
     print (Full_Deck)
-    four_of_kind = 0
+    
+    four_kind = 0
     full_house =0
-    iterations = 100_000
-    for hand in Generate_Hands(iterations):
+    iterations = 300_000
+    
+     for hand in Generate_Hands(iterations):
         four, full = check (hand)
-        four_of_kind += four
+        four_kind += four
         full_house += full
     
     print ("Probability four of a kind:", four_kind/iterations)  
