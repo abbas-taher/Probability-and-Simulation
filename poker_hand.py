@@ -4,9 +4,9 @@
 #__date__="2021.01.10"
 
 
-"""  Illustrative examples on how to use Flek Machine to do Probability computations
-     Basically given a full deck of 52 cards. 
+"""  Illustrative examples on how to simulate Probability computations using Python
      
+     Basically given a full deck of 52 cards. 
      If we are drawing a random sample of 5 cards from the deck (One Pocker hand)
      
      - What is the chance that 4 of the cards are of one kind?
